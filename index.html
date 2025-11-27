@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Daniel Prokop – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font: nowoczesna sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Header / Navbar -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand">Daniel Prokop</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section id="hero" class="hero section">
+      <div class="container hero-inner reveal">
+        <div class="hero-avatar">
+           <img src="../../images/mojskok.jpg" alt="Daniel Prokop profile picture">
+          </div>
+        <p class="hero-kicker">Software Engineer · Java & Spring</p>
+        <h1 class="hero-title">Hi, I'm <span>Daniel Prokop</span></h1>
+        <p class="hero-subtitle">
+          I design and build robust backend systems in the Java ecosystem –
+          focused on clean architecture, scalability and real-world impact.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View projects</a>
+          <a href="#about" class="btn ghost">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="card card--accent reveal">
+          <h2 class="section-title">About me</h2>
+          <p>
+            My name is Daniel Prokop. I’m a passionate Software Engineer with a strong focus
+            on backend development and the Java ecosystem. I’m currently studying Computer Science
+            at the Polish-Japanese Academy of Information Technology, where I’m expanding my expertise
+            in software architecture, distributed systems, and modern development practices.
+          </p>
+          <p>
+            I hold several industry-recognized certifications, including Oracle Certified Associate
+            and Professional (Java SE 8), as well as VMware Spring and Application certifications.
+            These credentials reflect my commitment to mastering robust, scalable, and clean
+            software development.
+          </p>
+          <p>
+            My technical strengths include Java, Spring Boot, Hibernate, SQL/NoSQL databases,
+            microservices, Docker, Git, and cloud technologies such as Azure. I also work with
+            JavaScript technologies like React and Node.js, which helps me understand full-stack
+            workflows and build complete end-to-end solutions.
+          </p>
+          <p>
+            With a background in graphic design and years of international work experience, I bring
+            creativity, adaptability, and strong communication skills to every project. I thrive in
+            collaborative environments, enjoy solving complex problems, and continuously push myself
+            to learn and improve.
+          </p>
+          <p>
+            I’m currently seeking opportunities to grow as a developer and contribute to meaningful,
+            well-crafted software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            A selection of academic and personal projects showcasing my skills in Java,
+            backend design, and problem solving.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Pacman -->
+          <article class="card project-card reveal">
+            <div class="project-image">
+              <img src="images/Pacman2.jpg" alt="Screenshot of Pacman 2.0 project">
+            </div>
+            <div class="project-content">
+              <h3>Pacman 2.0</h3>
+              <p>
+                A university project implementing a Pacman-style game with A* used for ghost
+                pathfinding. The system was built as a multithreaded application with synchronized
+                execution, in line with project requirements.
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>Multithreading</span>
+                <span>Pathfinding (A*)</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://github.com/DanielProkopDev/PacMan" class="btn primary"
+                   target="_blank" rel="noopener noreferrer">
+                  View on GitHub
+                </a>
+                <button class="btn ghost" disabled title="Demo coming soon">
+                  Demo coming soon
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- BooksLib -->
+          <article class="card project-card reveal">
+            <div class="project-image">
+              <img src="images/books.jpg" alt="Screenshot of BooksLib project">
+            </div>
+            <div class="project-content">
+              <h3>BooksLib</h3>
+              <p>
+                A simple library-management application designed to streamline the process
+                of registering users, renting books for a fee, and handling different access roles.
+                The system includes separate permissions for administrators, registered users,
+                and guests, allowing each group to interact with the library according to its privileges.
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>Role-based access</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://github.com/DanielProkopDev/BooksLib1" class="btn primary"
+                   target="_blank" rel="noopener noreferrer">
+                  View on GitHub
+                </a>
+                <button class="btn ghost" disabled title="Demo coming soon">
+                  Demo coming soon
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <div class="card contact-card reveal">
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-subtitle">
+            Open to internship and junior roles, backend-oriented positions, and interesting side projects.
+          </p>
+
+          <div class="contact-grid">
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:daniel.prokop.dev@gmail.com" class="contact-link">
+                daniel.prokop.dev@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <h3>Social</h3>
+              <ul class="social-links">
+                <li>
+                  <a href="https://www.linkedin.com/in/daniel-prokop-578494236/"
+                     target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/DanielProkopDev"
+                     target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="copyright">
+          &copy; <span id="year"></span> Daniel Prokop. All rights reserved.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
