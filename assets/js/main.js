@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const revealItems = document.querySelectorAll(".reveal");
   const yearSpan = document.getElementById("year");
 
-  // Ustaw aktualny rok w stopce
+  
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Zamknij menu po kliknięciu w link (mobile)
+  
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       const href = link.getAttribute("href");
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Reveal on scroll (IntersectionObserver)
+  // Reveal on scroll 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -60,3 +60,4 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach((el) => el.classList.add("is-visible"));
   }
 });
+
